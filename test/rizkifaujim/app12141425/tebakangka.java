@@ -15,6 +15,15 @@ public class tebakangka {
             jumlah++;
             System.out.print("Masukan Tebakan Anda : ");
             tebak=masukan.nextInt();
+            if(tebak>random) {
+                System.out.println("Tebakan Terlalu Besar");
+            }else if(tebak<random){
+                System.out.println("Tebakan Terlalu Keci");
+            }else{
+             System.out.print("Tebakan Benar! Setelah"+jumlah+" Kali Menebak");
+            }
+        }while(tebak!=random);
+            }
         }
         
         
